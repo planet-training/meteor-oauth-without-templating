@@ -5,14 +5,14 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.use(['underscore', 'random']);
-  api.use('accounts-base', ['client', 'server']);
+  api.use(['underscore@1.0.3', 'random@1.0.3']);
+  api.use('accounts-base@1.2.0', ['client', 'server']);
   // Export Accounts (etc) to packages using this one.
-  api.imply('accounts-base', ['client', 'server']);
-  api.use('accounts-oauth', ['client', 'server']);
-  api.use('google-no-ui-conf', ['client', 'server']);
+  api.imply('accounts-base@1.2.0', ['client', 'server']);
+  api.use('accounts-oauth@1.1.4', ['client', 'server']);
+  api.use('planettraining:google-no-ui-conf@0.0.1', ['client', 'server']);
 
-  api.addFiles('../meteor/packages/google/google_login_button.css', 'client');
+  api.addFiles('../meteor/packages/accounts-google/google_login_button.css', 'client');
 
-  api.addFiles("../meteor/packages/google/google.js");
+  api.addFiles("../meteor/packages/accounts-google/google.js");
 });
