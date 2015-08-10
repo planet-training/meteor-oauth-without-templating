@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Google OAuth flow without conf ui",
-  version: "0.0.1",
+  version: "0.0.2",
   name : "planettraining:google-no-ui-conf"
 });
 
