@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Facebook OAuth flow without conf ui",
-  version: "0.0.4",
+  version: "0.0.5",
   name : "planettraining:facebook-no-ui-conf"
 });
 
